@@ -6,14 +6,12 @@ public class Classroom{
        
        try
         {
-            int length = memberIndex;
-            string member = members[100];
-        } catch (IndexOutOfRangeException indexOutOfRangeException)
+            return members[memberIndex];
+        } catch (IndexOutOfRangeException)
         {
-            return indexOutOfRangeException.Message;
+            return members[0];
         }
-       
-        return members[memberIndex];
+        
 
     }
 }
