@@ -7,9 +7,9 @@ public class Classroom{
        try
         {
             return members[memberIndex];
-        } catch (IndexOutOfRangeException)
+        } catch (IndexOutOfRangeException indexOutOfRangeException)
         {
-            return members[0];
+            return indexOutOfRangeException.Message;
         }
         
 
